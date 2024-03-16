@@ -1,0 +1,73 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #87CEEB, #ffffff); 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.container {
+  text-align: center; 
+}
+
+
+form {
+  margin-bottom: 20px; 
+}
+
+input[type="text"], button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"] {
+  margin-right: 10px; 
+}
+
+button {
+  border: none;
+  background-color: #4a9bcf;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357abD;
+}
+
+
+.WeatherDisplay {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.WeatherDisplay h2, .WeatherDisplay p {
+  margin: 10px 0;
+}
+
+
+.WeatherDisplay .temp, .WeatherDisplay .weather {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  input[type="text"] {
+    margin: 0 0 10px 0;
+  }
+}
